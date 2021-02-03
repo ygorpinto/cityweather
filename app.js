@@ -10,9 +10,17 @@ button.addEventListener('click', (e) => {
         const body = document.querySelector('body')
         const showWeather = document.createElement('div')
         showWeather.id = "ShowWeather"
-        showWeather.innerHTML = `<p> <strong> Cidade :${data.name} </strong></p> <p><strong>Temperatura : ${Math.floor(data.main.temp)}º </strong></p>`
+        showWeather.innerHTML = `<p> <strong> Cidade :${data.name} </strong></p> <p><strong>Temperatura : ${Math.floor(data.main.temp)}º </strong></p> <p> <strong> <strong> ${data.weather.map(item => item.description)} </strong></p> `
         body.append(showWeather);
+        const rain = (data.clouds.all);
+        console.log(rain);
+
+        if (rain >= 60){
+        body.style.background="url('https://a-static.besthdwallpaper.com/menina-com-guarda-chuva-papel-de-parede-2560x1600-26699_7.jpg')"
+        body.style.backgroundPosition="center"
+        }
     }
+
 
     Bring();
 })

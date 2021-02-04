@@ -19,9 +19,10 @@ button.addEventListener('click', (e) => {
         body.style.background="url('https://a-static.besthdwallpaper.com/menina-com-guarda-chuva-papel-de-parede-2560x1600-26699_7.jpg')"
         body.style.backgroundPosition="center"
         }
+        else {
+            body.style.background="url('https://wallpapercave.com/wp/wp4077236.jpg')"
+        }
     }
-
-
     Bring();
 })
 
